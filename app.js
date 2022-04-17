@@ -1,3 +1,4 @@
+require("dotenv").config();
 var express = require("express");
 var app = express();
 app.get("*", async function(req, res){
@@ -10,7 +11,7 @@ var transporter = nodemailer.createTransport({
   pool: true,
   auth: {
     user: "raisashahg@gmail.com",
-    pass: "xfeltktrgimnoyqh",
+    pass: process.env.KEY,
   },
 });
 var mailingList = [{

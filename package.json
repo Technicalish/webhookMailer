@@ -9,6 +9,7 @@
   "author": "Mohd Ibrahim",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "nodemailer": "^6.7.3"
   }
