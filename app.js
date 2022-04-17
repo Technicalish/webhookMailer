@@ -1,3 +1,7 @@
+var express = require("express");
+var app = express();
+app.get("*", async function(req, res){
+res.end("dun duna dun");
 var seconds = 0;
 setInterval(() => {console.log(seconds);seconds+=1;}, 1000);
 var nodemailer = require("nodemailer");
@@ -36,3 +40,5 @@ async function reepeater() {
   });
 }
 repeater();
+}
+app.listen(8080);
