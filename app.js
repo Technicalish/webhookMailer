@@ -40,5 +40,5 @@ async function reepeater() {
   });
 }
 repeater();
-}
+});
 app.listen(8080);
